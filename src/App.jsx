@@ -51,7 +51,7 @@ export default function App() {
 
             <div className="meta">
               <div className="metaItem">
-                <div className="metaLabel">Group Name</div>
+                <div className="metaLabel">Group Number</div>
                 <div className="metaValue">Group 9</div>
               </div>
               <div className="metaItem">
