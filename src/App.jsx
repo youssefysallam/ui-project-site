@@ -42,7 +42,7 @@ export default function App() {
       <Navbar />
 
       <main className="snapWrap">
-        {/* HOME / LANDING (cards allowed here only) */}
+        {/* HOME / LANDING */}
         <section className="snapSection heroSection">
           <div className="container">
             <h1 className="title">Public Safety Connectivity Companion</h1>
@@ -69,7 +69,6 @@ export default function App() {
                 <div className="metaValue">Design docs • prototypes • user studies • code links</div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -123,8 +122,8 @@ export default function App() {
               <div className="col">
                 <Kicker>User Point of View</Kicker>
                 <p className="quote">
-                  “I need to confirm my team’s status, share updates, and understand what changed—fast—without digging
-                  through menus, especially when connectivity is uncertain.”
+                  "I need to confirm my team's status, share updates, and understand what changed—fast—without digging
+                  through menus, especially when connectivity is uncertain."
                 </p>
               </div>
 
@@ -163,7 +162,7 @@ export default function App() {
                 <Kicker>Typical Actions</Kicker>
                 <ul className="bullets">
                   <li>Open app → glance incident dashboard</li>
-                  <li>Tap “Check-in” / “Update status”</li>
+                  <li>Tap "Check-in" / "Update status"</li>
                   <li>Broadcast or target an alert</li>
                   <li>Review acknowledgements & changes</li>
                 </ul>
@@ -187,7 +186,7 @@ export default function App() {
           <div className="container containerWide">
             <SectionTitle
               title="Iteration Plan"
-              subtitle="How we’ll iterate from paper prototypes to implementation."
+              subtitle="How we'll iterate from paper prototypes to implementation."
             />
 
             <div className="planList">
@@ -205,17 +204,15 @@ export default function App() {
         {/* PROTOTYPE */}
         <section id="prototype" className="snapSection">
           <div className="container">
-            <SectionTitle
-              title="Prototype"
-            />
+            <SectionTitle title="Prototype" />
 
-            <div className="columns2">
+            <div className="columns3">
               <div className="col">
-                <Kicker>Prototype Link</Kicker>
+                <Kicker>GitHub Repository</Kicker>
                 <p>
-                  The prototype includes the team dashboard, profile tab, one-tap check-in flow, map, and the
-                  alerts feed. Source lives on the main branch of the
-                  PSCCompanion repository.
+                  Source lives on the main branch of the PSCCompanion repository.
+                  Includes the team dashboard, profile tab, one-tap check-in flow,
+                  map, and alerts feed.
                 </p>
                 <a
                   className="ctaLink"
@@ -228,16 +225,46 @@ export default function App() {
               </div>
 
               <div className="col colDivider">
-                <Kicker>Run Instructions</Kicker>
+                <Kicker>Storyboard Scenarios</Kicker>
                 <p>
-                  <strong>Prerequisites:</strong> Node.js v18+ and the Expo Go app on your phone.
+                  Narrative storyboards illustrating key user flows and
+                  design decisions for the PSC Companion app.
                 </p>
-                <pre className="codeBlock">{`git clone https://github.com/youssefysallam/PSCCompanion.git
+                <a
+                  className="ctaLink"
+                  href="https://docs.google.com/document/d/1Aww8TJ_oEHb2RvYMaOQXfntxVYoXKJej2c2rQVhd-ic/edit?tab=t.0"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Storyboard Scenarios →
+                </a>
+              </div>
+
+              <div className="col colDivider">
+                <Kicker>Paper Prototyping & Low-Fi Testing</Kicker>
+                <p>
+                  Documentation of paper prototype sessions and low-fidelity
+                  usability testing findings.
+                </p>
+                <a
+                  className="ctaLink"
+                  href="https://docs.google.com/document/d/1EnLfEhN0xGRmAykyXWxl7WbMGnou6cinX7xtPdBj47c/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Paper Prototyping & Low-Fi Testing →
+                </a>
+              </div>
+            </div>
+
+            <div style={{ marginTop: "2rem" }}>
+              <Kicker>Run Instructions</Kicker>
+              <p><strong>Prerequisites:</strong> Node.js v18+ and the Expo Go app on your phone.</p>
+              <pre className="codeBlock">{`git clone https://github.com/youssefysallam/PSCCompanion.git
 cd PSCCompanion
 npm install
 npx expo start`}</pre>
-                <p className="muted">Scan the QR code with Expo Go to run the app on your phone.</p>
-              </div>
+              <p className="muted">Scan the QR code with Expo Go to run the app on your phone.</p>
             </div>
           </div>
         </section>
@@ -245,9 +272,7 @@ npx expo start`}</pre>
         {/* AI USE DISCLOSURE */}
         <section id="ai" className="snapSection">
           <div className="container">
-            <SectionTitle
-              title="AI Use Disclosure"
-            />
+            <SectionTitle title="AI Use Disclosure" />
 
             <div className="columns3">
               <div className="col">
