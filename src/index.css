@@ -19,3 +19,11 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+.videoWrap {
+  width: 844px;
+  height: 390px;
+  margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}

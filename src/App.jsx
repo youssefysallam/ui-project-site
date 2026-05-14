@@ -15,6 +15,7 @@ function Navbar() {
           <a className="navLink" href="#goals">Goals</a>
           <a className="navLink" href="#plan">Plan</a>
           <a className="navLink" href="#prototype">Prototype</a>
+          <a className="navLink" href="#demo">Demo</a>
           <a className="navLink" href="#ai">AI Use</a>
         </div>
       </div>
@@ -268,6 +269,28 @@ npx expo start`}</pre>
             </div>
           </div>
         </section>
+
+
+        {/* APP DEMO */}
+        <section id="demo" className="snapSection">
+          <div className="container">
+            <SectionTitle
+              title="App Demo"
+              subtitle="A walkthrough of PSC Companion in action."
+            />
+              <div className="videoWrap">
+                <video
+                  controls
+                  playsInline
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
+                >
+                  <source src="public/demo_video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+          </div>
+        </section>
+
 
         {/* AI USE DISCLOSURE */}
         <section id="ai" className="snapSection">
