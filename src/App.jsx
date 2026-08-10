@@ -282,7 +282,7 @@ export default function App() {
                 </p>
                 <a
                   className="ctaLink"
-                  href="https://github.com/youssefysallam/PSCCompanion"
+                  href="https://github.com/youssefysallam/RespondIQ"
                   target="_blank"
                   rel="noreferrer"
                 >
