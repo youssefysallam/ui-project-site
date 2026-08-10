@@ -14,6 +14,7 @@ function Navbar() {
           <a className="navLink" href="#problem">Problem</a>
           <a className="navLink" href="#goals">Goals</a>
           <a className="navLink" href="#plan">Plan</a>
+          <a className="navLink" href="#tech">Technical</a>
           <a className="navLink" href="#prototype">Prototype</a>
           <a className="navLink" href="#demo">Demo</a>
           <a className="navLink" href="#ai">AI Use</a>
@@ -199,6 +200,70 @@ export default function App() {
                 <li><strong>Evaluation:</strong> speed, clarity, error rate, user confidence</li>
               </ol>
             </div>
+          </div>
+        </section>
+
+        {/* TECHNICAL IMPLEMENTATION */}
+        <section id="tech" className="snapSection">
+          <div className="container containerWide">
+            <SectionTitle
+              title="Technical Implementation"
+              subtitle="From research findings to a working, five-tab prototype."
+            />
+
+            <p className="quote">
+              First responders can't afford a learning curve mid-emergency - every second spent fumbling
+              with a menu is a second not spent doing their job. That constraint shaped every decision below.
+            </p>
+
+            <div className="columns2">
+              <div className="col">
+                <Kicker>Check-In Flow</Kicker>
+                <p>
+                  We interviewed incident commanders, firefighters, and EMS leads to understand how first
+                  responders coordinate under extreme stress, then redesigned the check-in flow from a
+                  three-step exchange into a one-tap broadcast. So a responder wearing gloves in low
+                  visibility can report status to their entire team instantly instead of waiting on a radio call.
+                </p>
+              </div>
+
+              <div className="col colDivider">
+                <Kicker>Tactical Map</Kicker>
+                <p>
+                We designed the map's UX and hazard zone logic, including color coded team status, three tier hazard
+                overlays, and proximity based teammate lookup. We then worked with AI tooling as a human in the loop
+                collaborator to implement it using react-native-maps and a Haversine distance calculation, giving
+                commanders full situational awareness of their deployment at a glance.
+                </p>
+              </div>
+            </div>
+
+            <div className="columns2" style={{ marginTop: "2.5rem" }}>
+              <div className="col">
+                <Kicker>Automatic Safety Alerts</Kicker>
+                <p>
+                  If a responder stops moving inside a hazard zone for two minutes, the app fires a 15-second
+                  confirmation warning, then automatically identifies and dispatches the two nearest qualified
+                  teammates with directions — no button press required.
+                </p>
+              </div>
+
+              <div className="col colDivider">
+                <Kicker>Alerts System</Kicker>
+                <p>
+                  The alerts feed runs on a global React Context store, so a resolved distress signal updates
+                  instantly across every screen. It's wired to live device sensors, so proximity and battery
+                  alerts clear themselves the moment the underlying problem is fixed, with entries sorted
+                  automatically by severity.
+                </p>
+              </div>
+            </div>
+
+            <p style={{ marginTop: "2rem" }}>
+              <strong>Result:</strong> a fully working five-tab prototype, submitted for the Verizon Frontline
+              App Developer Challenge and awarded a perfect score by our UX/UI professor for design quality and
+              adherence to core UX principles.
+            </p>
           </div>
         </section>
 
